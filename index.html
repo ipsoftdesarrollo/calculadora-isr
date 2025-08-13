@@ -1,9 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="es-MX">
 <head>
   <base target="_top">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculadora ISR Freelancers México</title>
+  
+  <title>Calculadora ISR para Freelancers en México | 2025</title>
+  <meta name="description" content="Calcula fácil y rápido el impuesto (ISR) que debes pagar como freelancer o trabajador independiente en México. Herramienta gratuita y actualizada al 2025.">
+  <meta name="keywords" content="calculadora isr, freelance, mexico, sat, impuestos, resico, actividad empresarial, honorarios, cálculo de impuestos, personas físicas">
+  
+  <!-- =================================================================== -->
+  <!-- = SCRIPT PRINCIPAL DE GOOGLE ADSENSE (SE COLOCA UNA SOLA VEZ) ===== -->
+  <!-- =================================================================== -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3437463266010928"
+     crossorigin="anonymous"></script>
+  <!-- =================================================================== -->
+
   <style>
     :root {
       --primary-color: #005A9C;
@@ -17,13 +29,14 @@
       background-color: var(--secondary-color);
       color: var(--font-color);
       display: flex;
-      flex-direction: column; /* <!-- CAMBIO: Para alinear el contenido verticalmente --> */
+      flex-direction: column;
       align-items: center;
       min-height: 100vh;
       margin: 0;
       padding: 1rem 0;
+      line-height: 1.6;
     }
-    .container {
+    .container, .faq-section, .resources-section {
       background-color: white;
       padding: 2rem;
       border-radius: var(--border-radius);
@@ -130,32 +143,6 @@
     #email-section button:hover {
       background-color: #218838;
     }
-
-    /* <!-- NUEVOS ESTILOS PARA MONETIZACIÓN --> */
-    .ad-placeholder {
-      width: 100%;
-      max-width: 500px;
-      min-height: 90px;
-      background-color: #e9ecef;
-      border: 2px dashed #ced4da;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #6c757d;
-      font-weight: bold;
-      margin: 1rem 0;
-      text-align: center;
-    }
-    .resources-section {
-      background-color: white;
-      padding: 2rem;
-      border-radius: var(--border-radius);
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      width: 100%;
-      max-width: 500px;
-      margin: 1rem;
-      border-top: 4px solid var(--success-color);
-    }
     .resources-section h2 {
       color: var(--primary-color);
       text-align: center;
@@ -176,7 +163,26 @@
     .resources-section a:hover {
       text-decoration: underline;
     }
-    
+    .faq-section h2 {
+      color: var(--primary-color);
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .faq-section h3 {
+      color: #333;
+      border-bottom: 2px solid var(--primary-color);
+      padding-bottom: 0.5rem;
+      margin-top: 2rem;
+    }
+    .faq-section p {
+      margin-bottom: 1rem;
+    }
+    .faq-section ul {
+      padding-left: 20px;
+    }
+    .faq-section li {
+      margin-bottom: 0.5rem;
+    }
     @keyframes spin {
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
@@ -185,10 +191,19 @@
 </head>
 <body>
 
-  <!-- NUEVO: Espacio para anuncio superior (Banner) -->
-  <div class="ad-placeholder">
-    Espacio para Anuncio (AdSense)
-  </div>
+  <!-- =================================================================== -->
+  <!-- ============== PRIMER BLOQUE DE ANUNCIOS DE ADSENSE =============== -->
+  <!-- =================================================================== -->
+  <ins class="adsbygoogle"
+     style="display:block; width:100%; max-width:500px; margin: 1rem 0;"
+     data-ad-client="ca-pub-3437463266010928"
+     data-ad-slot="5444053230"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  <!-- =================================================================== -->
 
   <div class="container">
     <h1>Calculadora de ISR</h1>
@@ -209,67 +224,127 @@
     <div id="email-status-message"></div>
   </div>
 
-  <!-- NUEVO: Sección de Recursos Recomendados (Afiliados) -->
+  <div class="faq-section">
+    <h2>Preguntas Frecuentes sobre Impuestos para Freelancers</h2>
+    <h3>¿Qué son las deducciones autorizadas para un freelancer?</h3>
+    <p>Son todos los gastos que necesitas hacer para poder realizar tu trabajo. El SAT los llama "gastos estrictamente indispensables". Piensa en ellos como inversiones para tu actividad. Algunos ejemplos comunes son:</p>
+    <ul>
+      <li>Compra de equipo de cómputo (laptop, monitor, etc.).</li>
+      <li>Pago de servicios como internet, teléfono y software especializado.</li>
+      <li>Renta de una oficina o un espacio de coworking.</li>
+      <li>Gasolina (si usas tu auto para visitar clientes).</li>
+      <li>Capacitaciones y cursos relacionados con tu profesión.</li>
+    </ul>
+    <p>Guardar las facturas de estos gastos es clave para reducir la cantidad de impuestos que pagas.</p>
+    <h3>¿Cómo sé cuál es mi régimen fiscal?</h3>
+    <p>El régimen fiscal es la categoría en la que el SAT te clasifica. Para freelancers, los más comunes son:</p>
+    <ul>
+      <li><strong>RESICO (Régimen Simplificado de Confianza):</strong> Ideal para quienes empiezan, con ingresos de hasta 3.5 millones de pesos al año. Paga una tasa de ISR muy baja (del 1% al 2.5%) directamente sobre los ingresos, sin deducciones.</li>
+      <li><strong>Personas Físicas con Actividad Empresarial y Profesional:</strong> Es el régimen tradicional. Aquí sí aplicas tus deducciones a tus ingresos para obtener una utilidad, y sobre esa utilidad se calcula el impuesto usando la tabla de esta calculadora.</li>
+    </ul>
+    <p>Si no estás seguro, es buena idea revisar tu Constancia de Situación Fiscal o consultarlo con un contador.</p>
+    <h3>Este cálculo es mensual, ¿cómo hago mi declaración anual?</h3>
+    <p>Esta herramienta te da una excelente estimación de tus pagos provisionales mensuales. La declaración anual es un resumen de todo tu año fiscal (de enero a diciembre) y se presenta en abril del siguiente año.</p>
+    <p>Para la anual, se suman todos tus ingresos y todas tus deducciones del año. Además, puedes incluir "deducciones personales" (como gastos médicos, colegiaturas, donativos) que no se meten en los cálculos mensuales. El resultado puede ser un saldo a favor (¡el SAT te devuelve dinero!) o un impuesto por pagar.</p>
+  </div>
+
   <div class="resources-section">
     <h2>Recursos Recomendados</h2>
     <ul>
-      <li>
-        <a href="#tu-enlace-de-afiliado-1" target="_blank">
-          Curso de Contabilidad para Freelancers
-        </a>
-        <p>Aprende a gestionar tus finanzas y a optimizar tus impuestos.</p>
-      </li>
-      <li>
-        <a href="#tu-enlace-de-afiliado-2" target="_blank">
-          Software de Facturación y Contabilidad
-        </a>
-        <p>Automatiza tu contabilidad con la mejor herramienta del mercado.</p>
-      </li>
+      <li><a href="#tu-enlace-de-afiliado-1" target="_blank">Curso de Contabilidad para Freelancers</a><p>Aprende a gestionar tus finanzas y a optimizar tus impuestos.</p></li>
+      <li><a href="#tu-enlace-de-afiliado-2" target="_blank">Software de Facturación y Contabilidad</a><p>Automatiza tu contabilidad con la mejor herramienta del mercado.</p></li>
     </ul>
-    <div class="ad-placeholder" style="min-height: 50px;">
-      Espacio para Anuncio (AdSense)
-    </div>
+    
+    <!-- =================================================================== -->
+    <!-- ============== SEGUNDO BLOQUE DE ANUNCIOS DE ADSENSE ============== -->
+    <!-- =================================================================== -->
+    <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-3437463266010928"
+       data-ad-slot="5444053230"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    <!-- =================================================================== -->
   </div>
 
   <script>
-    // ¡CAMBIO IMPORTANTE! Reemplaza esta URL con la tuya.
     const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxb-8bfSpsYIhrZecPUjT_hO8yA2WKqtzZdeYPJ2CY7BQXiLhfKfmhOqtZt6lDsXitA/exec";
-
     let currentResultData = null;
-
     document.getElementById("calculator-form").addEventListener("submit", function(event) {
       event.preventDefault();
-      // ... (el resto del código para mostrar el spinner no cambia)
       document.getElementById("spinner").style.display = "block";
       document.getElementById("submit-button").disabled = true;
       document.getElementById("results").style.display = "none";
       document.getElementById("email-status-message").innerHTML = "";
-
       const ingresos = parseFloat(document.getElementById("ingresos").value);
       const deducciones = parseFloat(document.getElementById("deducciones").value);
-      
-      // --- ASÍ SE LLAMA AHORA A LA FUNCIÓN DE CÁLCULO ---
       const payload = { action: "calculate", ingresos: ingresos, deducciones: deducciones };
       fetch(SCRIPT_URL, {
         method: 'POST',
+        mode: 'cors',
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
       })
       .then(response => response.json())
-      .then(data => showResults(data))
+      .then(data => {
+        if (data.success === false) {
+          showError({ message: data.message });
+        } else {
+          showResults(data);
+        }
+      })
       .catch(error => showError({ message: 'No se pudo conectar con el servidor. Intenta de nuevo.' }));
     });
-
-    // ... (La función showResults y showError se mantienen casi igual)
-
+    function showResults(resultObject) {
+      document.getElementById("spinner").style.display = "none";
+      document.getElementById("submit-button").disabled = false;
+      const resultsDiv = document.getElementById("results");
+      currentResultData = resultObject;
+      const currencyFormatter = new Intl.NumberFormat('es-MX', { style: 'currency', currency: 'MXN' });
+      resultsDiv.innerHTML = `
+        <div class="result-total">ISR a Pagar: ${currencyFormatter.format(resultObject.isrAPagar)}</div>
+        <div class="result-breakdown">
+          <p>Ingresos: <span>${currencyFormatter.format(resultObject.ingresos)}</span></p>
+          <p>Deducciones: <span>${currencyFormatter.format(resultObject.deducciones)}</span></p>
+          <p>Base Gravable: <span>${currencyFormatter.format(resultObject.baseGravable)}</span></p><hr>
+          <p>Límite Inferior: <span>${currencyFormatter.format(resultObject.limiteInferior)}</span></p>
+          <p>Cuota Fija: <span>${currencyFormatter.format(resultObject.cuotaFija)}</span></p>
+          <p>Tasa: <span>${resultObject.porcentajeAplicado}%</span></p>
+        </div>
+        <div id="email-section">
+          <div class="form-group">
+            <label for="email">Enviar desglose por correo:</label>
+            <input type="email" id="email" placeholder="tu.correo@ejemplo.com" required>
+          </div>
+          <button id="send-email-button">Enviar Email</button>
+        </div>`;
+      resultsDiv.style.display = "block";
+      document.getElementById("send-email-button").addEventListener("click", handleSendEmail);
+    }
+    function showError(error) {
+      document.getElementById("spinner").style.display = "none";
+      document.getElementById("submit-button").disabled = false;
+      const resultsDiv = document.getElementById("results");
+      resultsDiv.innerHTML = `<div class="error-message"><strong>Error:</strong> ${error.message}</div>`;
+      resultsDiv.style.display = "block";
+    }
     function handleSendEmail() {
-      // ... (la lógica para obtener el email no cambia)
       const email = document.getElementById("email").value;
-      if (!email) { /* ... */ }
-
-      // --- ASÍ SE LLAMA AHORA A LA FUNCIÓN DE EMAIL ---
+      if (!email || !email.includes('@')) {
+        alert("Por favor, introduce una dirección de correo válida.");
+        return;
+      }
+      const emailStatusDiv = document.getElementById("email-status-message");
+      emailStatusDiv.innerHTML = `<div class="email-status">Enviando correo...</div>`;
+      document.getElementById("send-email-button").disabled = true;
       const payload = { action: "sendEmail", data: currentResultData, email: email };
       fetch(SCRIPT_URL, {
         method: 'POST',
+        mode: 'cors',
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
       })
       .then(response => response.json())
@@ -282,11 +357,17 @@
       })
       .catch(error => showEmailError({ message: 'No se pudo enviar el correo.' }));
     }
-    
-    // Las funciones showResults, showError, showEmailSuccess y showEmailError
-    // ya no necesitan llamar a google.script.run, por lo que su lógica interna
-    // para mostrar/ocultar elementos sigue siendo la misma.
-  </script>
+    function showEmailSuccess(message) {
+      const emailStatusDiv = document.getElementById("email-status-message");
+      emailStatusDiv.innerHTML = `<div class="email-status success">${message}</div>`;
+      document.getElementById("send-email-button").disabled = false;
+    }
+    function showEmailError(error) {
+      const emailStatusDiv = document.getElementById("email-status-message");
+      emailStatusDiv.innerHTML = `<div class="error-message"><strong>Error:</strong> ${error.message}</div>`;
+      document.getElementById("send-email-button").disabled = false;
+    }
   </script>
 </body>
 </html>
+
